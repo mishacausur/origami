@@ -13,13 +13,32 @@ struct CardView: View {
     var body: some View {
         ZStack {
             if !show {
-                Text("Иванов Иван Иванович")
-                    .matchedGeometryEffect(id: "user", in: namespace)
+                VStack {
+                    Text("Иванов Иван Иванович")
+                        .font(.headline)
+                        .matchedGeometryEffect(id: "subject", in: namespace)
                     .frame(maxWidth: .infinity, alignment: .leading)
+                    Text("66:41:0205009:1393 ")
+                        .matchedGeometryEffect(id: "object", in: namespace)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .foregroundStyle(.white)
+                .background(
+                    Color.blue.matchedGeometryEffect(id: "color", in: namespace))
             } else {
-                Text("Иванов Иван Иванович")
-                    .matchedGeometryEffect(id: "user", in: namespace)
-                    .frame(maxWidth: .infinity, alignment: .trailing)
+                VStack {
+                    Spacer()
+                    Text("Иванов Иван Иванович")
+                        .font(.headline)
+                        .matchedGeometryEffect(id: "subject", in: namespace)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    Text("66:41:0205009:1393 ")
+                        .matchedGeometryEffect(id: "object", in: namespace)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .foregroundStyle(.black)
+                .background(
+                    Color.gray.matchedGeometryEffect(id: "color", in: namespace))
             }
         }
         .onTapGesture {
