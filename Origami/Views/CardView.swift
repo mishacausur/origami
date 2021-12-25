@@ -52,6 +52,7 @@ struct CardView: View {
                 }
                 .frame(height: 300)
                 .padding(20)
+                .shadow(radius: /*@START_MENU_TOKEN@*/30/*@END_MENU_TOKEN@*/)
             } else {
                 ScrollView {
                     VStack {
@@ -106,6 +107,8 @@ struct CardView: View {
                             .offset(y: 250)
                             .padding(20)
                     )
+                    .shadow(radius: /*@START_MENU_TOKEN@*/30/*@END_MENU_TOKEN@*/)
+                    
                 }
                 .ignoresSafeArea()
             }

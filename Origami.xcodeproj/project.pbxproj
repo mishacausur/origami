@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6477D2527776A11003DBA4B /* StrokeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6477D2427776A11003DBA4B /* StrokeStyle.swift */; };
+		B6477D2727776E8B003DBA4B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6477D2627776E8B003DBA4B /* AccountView.swift */; };
 		B6F8DE012777042F0045DCDB /* OrigamiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F8DE002777042F0045DCDB /* OrigamiApp.swift */; };
 		B6F8DE032777042F0045DCDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F8DE022777042F0045DCDB /* ContentView.swift */; };
 		B6F8DE05277704300045DCDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F8DE04277704300045DCDB /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6477D2427776A11003DBA4B /* StrokeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeStyle.swift; sourceTree = "<group>"; };
+		B6477D2627776E8B003DBA4B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		B6F8DDFD2777042F0045DCDB /* Origami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Origami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F8DE002777042F0045DCDB /* OrigamiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrigamiApp.swift; sourceTree = "<group>"; };
 		B6F8DE022777042F0045DCDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 				B6F8DE0E277704720045DCDB /* Views */,
 				B6F8DE002777042F0045DCDB /* OrigamiApp.swift */,
 				B6F8DE022777042F0045DCDB /* ContentView.swift */,
+				B6477D2427776A11003DBA4B /* StrokeStyle.swift */,
+				B6477D2627776E8B003DBA4B /* AccountView.swift */,
 				B6F8DE04277704300045DCDB /* Assets.xcassets */,
 				B6F8DE06277704300045DCDB /* Preview Content */,
 			);
@@ -149,8 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F8DE032777042F0045DCDB /* ContentView.swift in Sources */,
+				B6477D2527776A11003DBA4B /* StrokeStyle.swift in Sources */,
 				B6F8DE10277704810045DCDB /* CardView.swift in Sources */,
 				B6F8DE012777042F0045DCDB /* OrigamiApp.swift in Sources */,
+				B6477D2727776E8B003DBA4B /* AccountView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
