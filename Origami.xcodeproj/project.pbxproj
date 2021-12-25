@@ -11,6 +11,7 @@
 		B6F8DE032777042F0045DCDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F8DE022777042F0045DCDB /* ContentView.swift */; };
 		B6F8DE05277704300045DCDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F8DE04277704300045DCDB /* Assets.xcassets */; };
 		B6F8DE08277704300045DCDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F8DE07277704300045DCDB /* Preview Assets.xcassets */; };
+		B6F8DE10277704810045DCDB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F8DE0F277704810045DCDB /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B6F8DE022777042F0045DCDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B6F8DE04277704300045DCDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6F8DE07277704300045DCDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B6F8DE0F277704810045DCDB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		B6F8DDFF2777042F0045DCDB /* Origami */ = {
 			isa = PBXGroup;
 			children = (
+				B6F8DE0E277704720045DCDB /* Views */,
 				B6F8DE002777042F0045DCDB /* OrigamiApp.swift */,
 				B6F8DE022777042F0045DCDB /* ContentView.swift */,
 				B6F8DE04277704300045DCDB /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				B6F8DE07277704300045DCDB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6F8DE0E277704720045DCDB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6F8DE0F277704810045DCDB /* CardView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6F8DE032777042F0045DCDB /* ContentView.swift in Sources */,
+				B6F8DE10277704810045DCDB /* CardView.swift in Sources */,
 				B6F8DE012777042F0045DCDB /* OrigamiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
