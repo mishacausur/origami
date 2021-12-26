@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		B6477D2527776A11003DBA4B /* StrokeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6477D2427776A11003DBA4B /* StrokeStyle.swift */; };
 		B6477D2727776E8B003DBA4B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6477D2627776E8B003DBA4B /* AccountView.swift */; };
+		B6477D29277882C9003DBA4B /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6477D28277882C9003DBA4B /* HexagonView.swift */; };
+		B6477D2B27788601003DBA4B /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6477D2A27788601003DBA4B /* BlobView.swift */; };
+		B6477D2D2778D6AF003DBA4B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6477D2C2778D6AF003DBA4B /* TabBar.swift */; };
+		B6477D302778DD03003DBA4B /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6477D2F2778DD03003DBA4B /* Tab.swift */; };
 		B6F8DE012777042F0045DCDB /* OrigamiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F8DE002777042F0045DCDB /* OrigamiApp.swift */; };
 		B6F8DE032777042F0045DCDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F8DE022777042F0045DCDB /* ContentView.swift */; };
 		B6F8DE05277704300045DCDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F8DE04277704300045DCDB /* Assets.xcassets */; };
@@ -19,6 +23,10 @@
 /* Begin PBXFileReference section */
 		B6477D2427776A11003DBA4B /* StrokeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeStyle.swift; sourceTree = "<group>"; };
 		B6477D2627776E8B003DBA4B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		B6477D28277882C9003DBA4B /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
+		B6477D2A27788601003DBA4B /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
+		B6477D2C2778D6AF003DBA4B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		B6477D2F2778DD03003DBA4B /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		B6F8DDFD2777042F0045DCDB /* Origami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Origami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F8DE002777042F0045DCDB /* OrigamiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrigamiApp.swift; sourceTree = "<group>"; };
 		B6F8DE022777042F0045DCDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6477D2E2778DCF7003DBA4B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6477D2F2778DD03003DBA4B /* Tab.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B6F8DDF42777042F0045DCDB = {
 			isa = PBXGroup;
 			children = (
@@ -57,11 +73,12 @@
 		B6F8DDFF2777042F0045DCDB /* Origami */ = {
 			isa = PBXGroup;
 			children = (
+				B6477D2E2778DCF7003DBA4B /* Models */,
 				B6F8DE0E277704720045DCDB /* Views */,
 				B6F8DE002777042F0045DCDB /* OrigamiApp.swift */,
+				B6477D2627776E8B003DBA4B /* AccountView.swift */,
 				B6F8DE022777042F0045DCDB /* ContentView.swift */,
 				B6477D2427776A11003DBA4B /* StrokeStyle.swift */,
-				B6477D2627776E8B003DBA4B /* AccountView.swift */,
 				B6F8DE04277704300045DCDB /* Assets.xcassets */,
 				B6F8DE06277704300045DCDB /* Preview Content */,
 			);
@@ -80,6 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				B6F8DE0F277704810045DCDB /* CardView.swift */,
+				B6477D2A27788601003DBA4B /* BlobView.swift */,
+				B6477D2C2778D6AF003DBA4B /* TabBar.swift */,
+				B6477D28277882C9003DBA4B /* HexagonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,9 +176,13 @@
 			files = (
 				B6F8DE032777042F0045DCDB /* ContentView.swift in Sources */,
 				B6477D2527776A11003DBA4B /* StrokeStyle.swift in Sources */,
+				B6477D29277882C9003DBA4B /* HexagonView.swift in Sources */,
+				B6477D2D2778D6AF003DBA4B /* TabBar.swift in Sources */,
 				B6F8DE10277704810045DCDB /* CardView.swift in Sources */,
 				B6F8DE012777042F0045DCDB /* OrigamiApp.swift in Sources */,
+				B6477D302778DD03003DBA4B /* Tab.swift in Sources */,
 				B6477D2727776E8B003DBA4B /* AccountView.swift in Sources */,
+				B6477D2B27788601003DBA4B /* BlobView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
