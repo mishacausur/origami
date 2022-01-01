@@ -27,8 +27,8 @@ struct BlobView: View {
             withAnimation(.linear(duration: 20).repeatForever(autoreverses: true) ) {
                 appear = true
             }
-            }
-           
+        }
+        
     }
     
     func path(in rect: CGRect, x: Double, x2: Double) -> Path {

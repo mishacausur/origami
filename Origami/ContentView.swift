@@ -26,7 +26,7 @@ struct ContentView: View {
         .padding(.horizontal, 20)
         .background(Image("Blob 1").offset(x: 150, y: -200))
         .overlay {
-            Image("Illustration 5")
+            Image("Illustration 3")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: 230)

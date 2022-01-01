@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct HexagonView: View {
+    @State var appear = false
     var body: some View {
-        Canvas { context, size in
-            context.draw(Image(systemName: "hexagon.fill"), in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        VStack {
+            Canvas { context, size in
+                context.draw(Image(systemName: "hexagon.fill"), in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+            }
+            .rotationEffect(.degrees(appear ? 360 : 0))
+            .frame(width: 200, height: 212)
+            .foregroundStyle(LinearGradient(colors: [.pink, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
         }
-        .frame(width: 200, height: 212)
-        .foregroundStyle(LinearGradient(colors: [.pink, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
+        .onAppear {
+            withAnimation(.linear(duration: 20).repeatForever(autoreverses: true) ) {
+                appear = true
+            }
+        }
     }
+    
 }
 
 struct HexagonView_Previews: PreviewProvider {

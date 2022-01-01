@@ -114,7 +114,7 @@ struct CardView: View {
             }
         }
         .onTapGesture {
-            withAnimation(.spring(response: 0.6, dampingFraction: 0.7)) {
+            withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
                 show.toggle()
             }
         }
