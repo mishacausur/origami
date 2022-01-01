@@ -22,7 +22,7 @@ var tabItems = [
     Tab(image: "heart", text: "Избранное", tabItem: .favourite, color: .orange),
     Tab(image: "person", text: "Профиль", tabItem: .profile, color: .pink)]
 
-enum TabItems {
+enum TabItems: String {
     case home
     case search
     case favourite
@@ -30,6 +30,13 @@ enum TabItems {
 }
 
 struct TabWidth: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
+    }
+}
+
+struct ScrollHeight: PreferenceKey {
     static var defaultValue: CGFloat = 0
     static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
         value = nextValue()

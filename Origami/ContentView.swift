@@ -8,31 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("selectedItem") var selectedItem: TabItems = .home
     var body: some View {
-        VStack {
-            VStack {
-                Spacer()
-                Text("Войти")
-                    .font(.largeTitle.weight(.black))
-                    .foregroundStyle(.linearGradient(colors: [.pink, .purple], startPoint: .topLeading, endPoint: .bottomTrailing))
-                    .frame(maxWidth: .infinity, alignment: .leading)
-            }
+        ZStack(alignment: .bottom) {
+                switch selectedItem {
+                case .home:
+                    HomeView()
+                case .search:
+                    AccountView()
+                case .favourite:
+                    CardView()
+                case .profile:
+                    HexagonView()
+                }
+            TabBar()
         }
-        .padding(20)
-        .frame(height: 300)
-        .background(.ultraThinMaterial)
-        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
-        .strokeStyle()
-        .padding(.horizontal, 20)
-        .background(Image("Blob 1").offset(x: 150, y: -200))
-        .overlay {
-            Image("Illustration 3")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(height: 230)
-                .offset(x: 30, y: -80)
+        .safeAreaInset(edge: .bottom) {
+            Color.clear
+                .frame(height: 44)
         }
-       
+        
     }
        
 }

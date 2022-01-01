@@ -10,18 +10,21 @@ import SwiftUI
 struct HexagonView: View {
     @State var appear = false
     var body: some View {
-        VStack {
-            Canvas { context, size in
-                context.draw(Image(systemName: "hexagon.fill"), in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        ScrollView {
+            VStack {
+                Canvas { context, size in
+                    context.draw(Image(systemName: "hexagon.fill"), in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+                }
+                .rotationEffect(.degrees(appear ? 360 : 0))
+                .frame(width: 200, height: 212)
+                .foregroundStyle(LinearGradient(colors: [.pink, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
             }
-            .rotationEffect(.degrees(appear ? 360 : 0))
-            .frame(width: 200, height: 212)
-            .foregroundStyle(LinearGradient(colors: [.pink, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
+            .frame(maxWidth: .infinity)
+            .onAppear {
+                withAnimation(.linear(duration: 20).repeatForever(autoreverses: true) ) {
+                    appear = true
+                }
         }
-        .onAppear {
-            withAnimation(.linear(duration: 20).repeatForever(autoreverses: true) ) {
-                appear = true
-            }
         }
     }
     
