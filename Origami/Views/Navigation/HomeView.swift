@@ -60,10 +60,12 @@ struct HomeView: View {
         }
         .statusBar(hidden: !showStatusBar)
         .onChange(of: show) { newValue in
-            if show {
-                showStatusBar = false
-            } else {
-                showStatusBar = true
+            withAnimation {
+                if show {
+                    showStatusBar = false
+                } else {
+                    showStatusBar = true
+                }
             }
         }
     }
