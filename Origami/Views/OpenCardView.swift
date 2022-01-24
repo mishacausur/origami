@@ -10,6 +10,7 @@ import SwiftUI
 struct OpenCardView: View {
     var namespace: Namespace.ID
     @Binding var show: Bool
+    @State var appear = [false, false, false]
     var body: some View {
         ZStack {
             ScrollView {
@@ -38,6 +39,11 @@ struct OpenCardView: View {
             }
             .background(Color("Background"))
             .ignoresSafeArea()
+        }
+        .onAppear {
+            appear[0] = true
+            appear[1] = true
+            appear[2] = true
         }
     }
     
