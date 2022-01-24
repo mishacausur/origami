@@ -26,7 +26,7 @@ struct HomeView: View {
                 if !show {
                     CardItem(namespace: namespace, show: $show)
                         .onTapGesture {
-                            withAnimation(.spring(response: 0.4, dampingFraction: 0.7)) {
+                            withAnimation(.openCard) {
                                 show.toggle()
                             }
                         }
@@ -60,7 +60,7 @@ struct HomeView: View {
         }
         .statusBar(hidden: !showStatusBar)
         .onChange(of: show) { newValue in
-            withAnimation {
+            withAnimation(.closeCard) {
                 if show {
                     showStatusBar = false
                 } else {

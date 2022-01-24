@@ -24,6 +24,7 @@
 		B6965CF72780776E0069F566 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6965CF62780776E0069F566 /* NavigationBar.swift */; };
 		B6965CFA2780C1DD0069F566 /* FontAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6965CF92780C1DD0069F566 /* FontAnimator.swift */; };
 		B6965CFC2780D96C0069F566 /* Sections.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6965CFB2780D96C0069F566 /* Sections.swift */; };
+		B6B8F50E279F20CC004CCD77 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B8F50D279F20CC004CCD77 /* Animations.swift */; };
 		B6F8DE012777042F0045DCDB /* OrigamiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F8DE002777042F0045DCDB /* OrigamiApp.swift */; };
 		B6F8DE032777042F0045DCDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F8DE022777042F0045DCDB /* ContentView.swift */; };
 		B6F8DE05277704300045DCDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F8DE04277704300045DCDB /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		B6965CF62780776E0069F566 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		B6965CF92780C1DD0069F566 /* FontAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontAnimator.swift; sourceTree = "<group>"; };
 		B6965CFB2780D96C0069F566 /* Sections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sections.swift; sourceTree = "<group>"; };
+		B6B8F50D279F20CC004CCD77 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		B6F8DDFD2777042F0045DCDB /* Origami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Origami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F8DE002777042F0045DCDB /* OrigamiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrigamiApp.swift; sourceTree = "<group>"; };
 		B6F8DE022777042F0045DCDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				B6477D2427776A11003DBA4B /* StrokeStyle.swift */,
 				B6965CF92780C1DD0069F566 /* FontAnimator.swift */,
+				B6B8F50D279F20CC004CCD77 /* Animations.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				B6477D2727776E8B003DBA4B /* AccountView.swift in Sources */,
 				B663D2E3278050D100363AA8 /* Usen.swift in Sources */,
 				B6477D2B27788601003DBA4B /* BlobView.swift in Sources */,
+				B6B8F50E279F20CC004CCD77 /* Animations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
