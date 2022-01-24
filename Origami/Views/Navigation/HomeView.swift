@@ -11,6 +11,7 @@ struct HomeView: View {
     @Namespace var namespace
     @State var show = false
     @State var isScrolled = false
+    @State var showStatusBar = true
     var body: some View {
         ZStack {
             Color("Background").ignoresSafeArea()
@@ -57,7 +58,14 @@ struct HomeView: View {
             }
             
         }
-    
+        .statusBar(hidden: !showStatusBar)
+        .onChange(of: show) { newValue in
+            if show {
+                showStatusBar = false
+            } else {
+                showStatusBar = true
+            }
+        }
     }
     
     var scrollDetection: some View {
