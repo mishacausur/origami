@@ -14,7 +14,7 @@
 		B6477D2D2778D6AF003DBA4B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6477D2C2778D6AF003DBA4B /* TabBar.swift */; };
 		B6477D302778DD03003DBA4B /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6477D2F2778DD03003DBA4B /* Tab.swift */; };
 		B64C3E2B2780F39100B91F81 /* CardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C3E2A2780F39100B91F81 /* CardItem.swift */; };
-		B64C3E2F2780F4F100B91F81 /* OpenCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C3E2E2780F4F100B91F81 /* OpenCardView.swift */; };
+		B64C3E2F2780F4F100B91F81 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C3E2E2780F4F100B91F81 /* Card.swift */; };
 		B64C3E312781008B00B91F81 /* OneMoreBlob.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C3E302781008B00B91F81 /* OneMoreBlob.swift */; };
 		B64C3E332781019900B91F81 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64C3E322781019900B91F81 /* CardData.swift */; };
 		B663D2E3278050D100363AA8 /* Usen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B663D2E2278050D100363AA8 /* Usen.swift */; };
@@ -40,7 +40,7 @@
 		B6477D2C2778D6AF003DBA4B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		B6477D2F2778DD03003DBA4B /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		B64C3E2A2780F39100B91F81 /* CardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItem.swift; sourceTree = "<group>"; };
-		B64C3E2E2780F4F100B91F81 /* OpenCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCardView.swift; sourceTree = "<group>"; };
+		B64C3E2E2780F4F100B91F81 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		B64C3E302781008B00B91F81 /* OneMoreBlob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneMoreBlob.swift; sourceTree = "<group>"; };
 		B64C3E322781019900B91F81 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 		B663D2E2278050D100363AA8 /* Usen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usen.swift; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				B6F8DE0F277704810045DCDB /* CardView.swift */,
-				B64C3E2E2780F4F100B91F81 /* OpenCardView.swift */,
+				B64C3E2E2780F4F100B91F81 /* Card.swift */,
 				B64C3E2A2780F39100B91F81 /* CardItem.swift */,
 				B684CE252785E2B400643D60 /* CategoriesView.swift */,
 				B6965CF52780775F0069F566 /* Navigation */,
@@ -238,7 +238,7 @@
 				B6477D2D2778D6AF003DBA4B /* TabBar.swift in Sources */,
 				B6965CFA2780C1DD0069F566 /* FontAnimator.swift in Sources */,
 				B6F8DE10277704810045DCDB /* CardView.swift in Sources */,
-				B64C3E2F2780F4F100B91F81 /* OpenCardView.swift in Sources */,
+				B64C3E2F2780F4F100B91F81 /* Card.swift in Sources */,
 				B6F8DE012777042F0045DCDB /* OrigamiApp.swift in Sources */,
 				B6965CFC2780D96C0069F566 /* Sections.swift in Sources */,
 				B6477D302778DD03003DBA4B /* Tab.swift in Sources */,

@@ -54,7 +54,7 @@ struct HomeView: View {
                 NavigationBar(isScrolled: $isScrolled, title: "Featured")
             )
             if show {
-                OpenCardView(namespace: namespace, show: $show)
+                Card(namespace: namespace, show: $show)
                     .zIndex(1)
                     .transition(.asymmetric(insertion: .opacity.animation(.easeInOut(duration: 0.2)), removal: .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
             }

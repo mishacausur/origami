@@ -1,5 +1,5 @@
 //
-//  OpenCardView.swift
+//  Card.swift
 //  Origami
 //
 //  Created by Misha Causur on 02.01.2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OpenCardView: View {
+struct Card: View {
     var namespace: Namespace.ID
     @Binding var show: Bool
     @State var appear = [false, false, false]
@@ -107,6 +107,6 @@ struct OpenCardView: View {
 struct OpenCardView_Previews: PreviewProvider {
     @Namespace static var namespace
     static var previews: some View {
-        OpenCardView(namespace: namespace, show: .constant(true))
+        Card(namespace: namespace, show: .constant(true))
     }
 }
