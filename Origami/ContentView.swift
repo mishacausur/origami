@@ -17,7 +17,7 @@ struct ContentView: View {
                 case .search:
                     AccountView()
                 case .favourite:
-                    CardView()
+                    AccountView()
                 case .profile:
                     HexagonView()
                 }

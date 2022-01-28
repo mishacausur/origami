@@ -58,7 +58,7 @@ struct AccountView: View {
             NavigationLink(destination: ContentView()) {
                 Label("Настройки", systemImage: "gear")
             }
-            NavigationLink { CardView() } label: {
+            NavigationLink {  } label: {
                 Label("Баланс", systemImage: "creditcard")
             }
             NavigationLink { Text("Страница в разработке") } label: {
