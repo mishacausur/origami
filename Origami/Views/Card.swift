@@ -21,20 +21,7 @@ struct Card: View {
                                 show.toggle()
                             }
                         }
-                    Button {
-                        withAnimation(.closeCard) {
-                            show.toggle()
-                        }
-                    } label: {
-                        Image(systemName: "xmark")
-                            .font(.body.weight(.bold))
-                            .foregroundColor(.secondary)
-                            .padding(8)
-                            .background(.ultraThinMaterial, in: Circle())
-                    }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-                    .padding(.top, 60)
-                    .padding(.trailing, 20)
+                    button
                 }
             }
             .background(Color("Background"))
@@ -101,6 +88,24 @@ struct Card: View {
                 .padding(20)
         )
         .shadow(radius: /*@START_MENU_TOKEN@*/30/*@END_MENU_TOKEN@*/)
+    }
+    
+    
+    var button: some View {
+        Button {
+            withAnimation(.closeCard) {
+                show.toggle()
+            }
+        } label: {
+            Image(systemName: "xmark")
+                .font(.body.weight(.bold))
+                .foregroundColor(.secondary)
+                .padding(8)
+                .background(.ultraThinMaterial, in: Circle())
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+        .padding(.top, 60)
+        .padding(.trailing, 20)
     }
 }
 
