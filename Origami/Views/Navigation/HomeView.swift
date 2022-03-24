@@ -95,6 +95,7 @@ struct SwiftUIView_Previews: PreviewProvider {
     }
 }
 
+
 struct featured: View {
     var body: some View {
         TabView {
