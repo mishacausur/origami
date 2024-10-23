@@ -121,6 +121,6 @@ struct featured: View {
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
         .frame(height: 370)
-        //        .background(Image("Blob 1").offset(x: 250, y: -100))
+        .background(Image("Blob 1").offset(x: 250, y: -100))
     }
 }
