@@ -126,6 +126,7 @@ struct featured: View {
 }
 
 
-struct ModeText {
+struct ModeText: Identifiable {
     let title: String
+    
 }
