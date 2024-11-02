@@ -127,5 +127,5 @@ struct featured: View {
 
 
 struct ModeText {
-    
+    let title: String
 }
