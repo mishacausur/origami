@@ -129,5 +129,4 @@ struct featured: View {
 struct ModeText: Identifiable {
     var id: ObjectIdentifier
     let title: String
-    
 }
