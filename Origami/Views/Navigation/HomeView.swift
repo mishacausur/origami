@@ -124,3 +124,8 @@ struct featured: View {
         .background(Image("Blob 1").offset(x: 250, y: -100))
     }
 }
+
+
+struct ModeText {
+    
+}
